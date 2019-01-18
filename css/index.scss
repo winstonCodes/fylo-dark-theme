@@ -1,0 +1,175 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+/* Variables */
+$font-headings: Raleway, sans-serif;
+$font-body: "Open Sans", sans-serif;
+
+$main-bkg: hsl(218, 28%, 13%);
+$intro-bkg: hsl(217, 28%, 15%);
+$footer-bkg: hsl(216, 53%, 9%);
+$testimonials-bkg: hsl(219, 30%, 18%);
+
+$accent-1: hsl(176, 68%, 64%);
+$accent-2: hsl(198, 60%, 50%);
+
+$neutral: hsl(0, 0%, 100%);
+
+body {
+    font-size: 14px;
+    font-family: $font-body;
+    line-height: 2em;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-headings;
+}
+
+h1 { font-size: 2.3em; }
+h2 { font-size: 1.728em; }
+h3 { font-size: 1.44em; }
+h4 { font-size: 1.2em; }
+
+body.dark-theme {
+  background-color: $main-bkg;
+  color: $neutral;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em;
+  .logo {
+    transform: scale(0.8) translateX(-20px);
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a {
+      color: $neutral;
+      opacity: 0.7;
+      text-decoration: none;
+      font-size: 1em;
+      margin-left: 2em;
+      font-family: $font-body;
+    }
+  }
+}
+
+button.get-started {
+  width: 300px;
+  height: 60px;
+  background-color: $accent-1;
+  background-image: linear-gradient(to right, $accent-1, $accent-2);
+  color: $neutral;
+  border-radius: 30px;
+  font-size: 1em;
+}
+
+h1 {
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 680px;
+  margin: auto;
+  text-align: center;
+  p {
+    max-width: 580px;
+    font-size: 1.2em;
+    opacity: 0.8;
+  }
+  h2 {
+  }
+}
+
+.feature-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 900px;
+  margin: 10em auto;
+  .feature-square {
+    flex-basis: 45%;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+    p {
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+      opacity: 0.8;
+    }
+  }
+}
+
+@media (max-width: 701px) {
+  .feature-grid {
+    flex-direction: column;
+  }
+}
+
+/* Image && Text Sections */
+
+.half-img-half-text {
+  display: flex;
+  padding: 0 8vw 7vh;
+  width: 100%;
+  justify-content: space-between;
+  .section-content {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      margin-bottom: 0.5em;
+      width: 100%;
+      max-width: 340px;
+    }
+    a {
+      text-decoration: none;
+      .link-decor{
+        color: $accent-1;
+        text-decoration: none;
+        border-bottom: 1px solid $accent-1;
+        padding-bottom: 3px;
+        img {
+          height: 0.9em;
+        }
+      }
+    }
+  }
+  .section-image {
+    flex-basis: 50%;
+    img {
+      width: 100%;
+      max-width: 615px;
+    }
+    // width: 45vw;
+    // background-position: center;
+    // background-size: contain;
+    // background-repeat: no-repeat;
+    // background-image: url("../images/illustration-stay-productive.png");
+  }
+}

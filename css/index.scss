@@ -46,6 +46,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 3em;
+  background-color: $intro-bkg;
   .logo {
     transform: scale(0.8) translateX(-20px);
   }
@@ -86,6 +87,20 @@ p {
   margin-bottom: 1em;
 }
 
+.intro-container {
+  background-color: $intro-bkg;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-curvy-desktop.svg");
+  background-position: bottom;
+}
+
+@media (max-width:700px) {
+  .intro-container {
+    background-image: url("../images/bg-curvy-mobile.svg");
+  }
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -94,6 +109,7 @@ p {
   max-width: 680px;
   margin: auto;
   text-align: center;
+
   p {
     max-width: 580px;
     font-size: 1.2em;

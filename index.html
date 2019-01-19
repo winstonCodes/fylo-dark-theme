@@ -6,15 +6,12 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/index.css">
 
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body class="dark-theme">
   <header>
@@ -99,53 +96,111 @@
   </section>
 
   <section class="testimonials">
-    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-    become a well-oiled collaboration machine.
 
-    Satish Patel
-    Founder & CEO, Huddle
+    <div class="testimonial-square first">
+      <p>
+        Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        become a well-oiled collaboration machine.
+      </p>
+      <div class="testimonial-profile">
+        <img src="./images/profile-1.jpg" alt="">
+        <div class="author">
+          <h4>Satish Patel</h4>
+          <p>Founder & CEO, Huddle</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-square">
+      <p>
+        Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        become a well-oiled collaboration machine.
+      </p>
+      <div class="testimonial-profile">
+        <img src="./images/profile-1.jpg" alt="">
+        <div class="author">
+          <h4>Bruce McKenzie</h4>
+          <p>Founder & CEO, Huddle</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-square">
+      <p>
+        Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
+        become a well-oiled collaboration machine.
+      </p>
+      <div class="testimonial-profile">
+        <img src="./images/profile-1.jpg" alt="">
+        <div class="author">
+          <h4>Iva Boyd</h4>
+          <p>Founder & CEO, Huddle</p>
+        </div>
+      </div>
+    </div>
 
-    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-    become a well-oiled collaboration machine.
 
-    Bruce McKenzie
-    Founder & CEO, Huddle
+  </section>
 
-    Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has
-    become a well-oiled collaboration machine.
-
-    Iva Boyd
-    Founder & CEO, Huddle
-
+  <section class="call-to-action">
+    <div class="section-content">
+      <h1>Get early access today</h1>
+      <p>
+        It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
+        questions, our support team would be happy to help you.
+      </p>
+      <input type="email" name="" value="">
+      <button type="button" name="button" class="get-started">Get Started For Free</button>
+    </div>
   </section>
 
 
   <footer>
-    Get early access today
 
-    It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-    questions, our support team would be happy to help you.
+    <div class="footer-header">
+      <img src="./images/logo.svg" alt="" class="logo">
 
-    Get Started For Free
+    </div>
+    <div class="col-1">
+      <div class="icon-text">
+        <img src="./images/icon-location.svg" alt="">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua
+        </p>
+      </div>
+    </div>
+    <div class="col-2">
+      <p><img src="./images/icon-phone.svg" alt="">+1-543-123-4567</p>
+      <p><img src="./images/icon-email.svg" alt="">example@fylo.com</p>
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-    dolore magna aliqua
+    </div>
+    <div class="col-3">
 
-    +1-543-123-4567
-    example@fylo.com
+      <a href="#">About Us</a>
+      <a href="#">Jobs</a>
+      <a href="#">Press</a>
+      <a href="#">Blog</a>
 
-    About Us
-    Jobs
-    Press
-    Blog
+    </div>
+    <div class="col-4">
+      <a href="#">Contact Us</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
 
-    Contact Us
-    Terms
-    Privacy
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    </div>
+    <div class="col-5">
+      <p class="social-icons">
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-instagram fa-2x"></i>
+        <i class="fab fa-twitter-square fa-2x"></i>
+      </p>
+    </div>
+
+
+
   </footer>
+  <p class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/winstonCodes/flylo-dark-theme">Winston</a>.
+  </p>
 </body>
 </html>

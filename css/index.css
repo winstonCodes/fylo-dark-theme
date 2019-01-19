@@ -415,6 +415,9 @@ footer .col-5 .social-icons i {
     margin-bottom: 2em;
   }
 
+  header {
+    padding: 1em;
+  }
   header .logo {
     transform: scale(0.6) translateX(-60px);
   }

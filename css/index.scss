@@ -23,9 +23,6 @@ body {
     font-size: 14px;
     font-family: $font-body;
     line-height: 2em;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -41,6 +38,9 @@ body.dark-theme {
   background-color: $main-bkg;
   color: $neutral;
 }
+
+
+/* Header */
 
 header {
   display: flex;
@@ -74,6 +74,9 @@ button.get-started {
   font-size: 1em;
 }
 
+
+/* Intro */
+
 h1 {
   line-height: 1.5em;
   margin-bottom: 1.5em;
@@ -99,6 +102,9 @@ p {
   h2 {
   }
 }
+
+
+/* Feature Grid */
 
 .feature-grid {
   display: flex;
@@ -129,6 +135,7 @@ p {
     flex-direction: column;
   }
 }
+
 
 /* Image && Text Sections */
 
@@ -172,6 +179,9 @@ p {
   }
 }
 
+
+/* Testimonials */
+
 .testimonials {
   display: flex;
   width: 100%;
@@ -189,7 +199,6 @@ p {
     min-width: 325px;
     height: 200px;
     padding: 2.5em 2em 1.5em;
-    // margin-right: 40px;
     p {
       width: 100%;
       max-width: 300px;
@@ -247,6 +256,9 @@ p {
   }
 }
 
+
+/* Call-to-Action */
+
 .call-to-action {
   display: flex;
   flex-direction: column;
@@ -294,6 +306,9 @@ p {
   }
 }
 
+
+/* Footer */
+
 footer {
   background-color: $footer-bkg;
   display: grid;
@@ -323,7 +338,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     grid-column: 1/3;
-    // grid-row: 1/3;
     .icon-text {
       display: flex;
       align-items: flex-start;
@@ -342,14 +356,11 @@ footer {
     p {
       display: flex;
       align-items: center;
-      // justify-content: space-around;
     }
     img {
       height: 1em;
       margin-right: 1em;
-    }
-    // text-align: right;
-  }
+    }  }
   .col-3 {
     grid-column: 4;
     padding-left: 3em;
@@ -389,6 +400,22 @@ footer {
     }
   }
 }
+
+.attribution {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: $footer-bkg;
+  margin: 0;
+  font-size: 11px; text-align: center;
+}
+.attribution a { color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Media Queries */
 
 @media (max-width: 750px) {
   .half-img-half-text {
@@ -472,17 +499,4 @@ footer {
       }
     }
   }
-}
-
-.attribution {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: $footer-bkg;
-  margin: 0;
-  font-size: 11px; text-align: center;
-}
-  .attribution a { color: inherit;
-    text-decoration: none;
-    font-weight: bold;
 }

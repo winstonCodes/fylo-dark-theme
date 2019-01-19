@@ -39,6 +39,7 @@ body.dark-theme {
   color: white;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
@@ -71,6 +72,7 @@ button.get-started {
   font-size: 1em;
 }
 
+/* Intro */
 h1 {
   line-height: 1.5em;
   margin-bottom: 1.5em;
@@ -94,6 +96,7 @@ p {
   font-size: 1.2em;
   opacity: 0.8;
 }
+/* Feature Grid */
 .feature-grid {
   display: flex;
   justify-content: space-between;
@@ -164,6 +167,7 @@ p {
   max-width: 615px;
 }
 
+/* Testimonials */
 .testimonials {
   display: flex;
   width: 100%;
@@ -238,6 +242,7 @@ p {
     top: -195px;
   }
 }
+/* Call-to-Action */
 .call-to-action {
   display: flex;
   flex-direction: column;
@@ -284,6 +289,7 @@ p {
     margin-right: 2em;
   }
 }
+/* Footer */
 footer {
   background-color: #0b1523;
   display: grid;
@@ -370,6 +376,23 @@ footer .col-5 .social-icons i {
     padding-left: 1em;
   }
 }
+.attribution {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #0b1523;
+  margin: 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Media Queries */
 @media (max-width: 750px) {
   .half-img-half-text {
     flex-direction: column;
@@ -451,21 +474,6 @@ footer .col-5 .social-icons i {
   footer .social-icons i {
     margin: 0;
   }
-}
-.attribution {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  background-color: #0b1523;
-  margin: 0;
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: inherit;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <style>
+    body{background-color: black;}
+  </style>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Open+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/index-light-theme.css">
 
   <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
 
 
 </head>
-<body class="dark-theme">
+<body>
   <header>
-    <img src="./images/logo.svg" alt="" class="logo">
+    <div class="logo"></div>
     <nav>
       <a href="#">Features</a>
       <a href="#">Team</a>
       <a href="#">Sign In</a>
+      <i class="fas fa-moon" id="switch-theme"></i>
     </nav>
   </header>
 
@@ -42,7 +45,7 @@
 
   <section class="feature-grid">
     <div class="feature-square">
-      <img src="./images/icon-access-anywhere.svg" alt="">
+      <div class="access-img"></div>
       <h3>
         Access your files, anywhere
       </h3>
@@ -118,7 +121,7 @@
         become a well-oiled collaboration machine.
       </p>
       <div class="testimonial-profile">
-        <img src="./images/profile-1.jpg" alt="">
+        <img src="./images/profile-2.jpg" alt="">
         <div class="author">
           <h4>Bruce McKenzie</h4>
           <p>Founder & CEO, Huddle</p>
@@ -131,7 +134,7 @@
         become a well-oiled collaboration machine.
       </p>
       <div class="testimonial-profile">
-        <img src="./images/profile-1.jpg" alt="">
+        <img src="./images/profile-3.jpg" alt="">
         <div class="author">
           <h4>Iva Boyd</h4>
           <p>Founder & CEO, Huddle</p>
@@ -204,5 +207,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://github.com/winstonCodes/flylo-dark-theme">Winston</a>.
   </p>
+  <script type="text/javascript" src="index.js">
+
+  </script>
 </body>
 </html>

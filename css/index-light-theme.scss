@@ -9,10 +9,10 @@
 $font-headings: Raleway, sans-serif;
 $font-body: "Open Sans", sans-serif;
 
-$theme-main-bkg: hsl(218, 28%, 13%);
-$theme-intro-bkg: hsl(217, 28%, 15%);
-$theme-footer-bkg: hsl(216, 53%, 9%);
-$theme-testimonials-bkg: hsl(219, 30%, 18%);
+$theme-main-bkg: #768AA0;
+$theme-intro-bkg: #F2F4F2;
+$theme-footer-bkg: #225DA6;
+$theme-testimonials-bkg: #84B6D8;
 
 $accent-1: hsl(176, 68%, 64%);
 $accent-2: hsl(198, 60%, 50%);
@@ -38,7 +38,7 @@ h4 { font-size: 1.2em; }
 
 body {
   background-color: $theme-main-bkg;
-  color: $neutral-light;
+  color: $neutral-dark;
 }
 
 
@@ -52,7 +52,7 @@ header {
   .logo {
     width: 140.8px;
     height: 41.6px;
-    background-image: url("../images/logo.svg");
+    background-image: url("../images/logo-dark.svg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@ header {
     justify-content: space-around;
     align-items: center;
     a, i {
-      color: $neutral-light;
+      color: $neutral-dark;
       opacity: 0.7;
       text-decoration: none;
       font-size: 1em;
@@ -102,13 +102,13 @@ p {
   background-color: $theme-intro-bkg;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url("../images/bg-curvy-desktop.svg");
+  background-image: url("../images/bg-curvy-desktop-light.svg");
   background-position: bottom;
 }
 
 @media (max-width:700px) {
   .intro-container {
-    background-image: url("../images/bg-curvy-mobile.svg");
+    background-image: url("../images/bg-curvy-mobile-light.svg");
   }
 }
 
@@ -157,7 +157,7 @@ p {
     .access-img{
       width: 83px;
       height: 78px;
-      background-image: url("../images/icon-access-anywhere.svg");
+      background-image: url("../images/icon-access-anywhere-light.svg");
     }
   }
 }
@@ -343,6 +343,7 @@ p {
 
 footer {
   background-color: $theme-footer-bkg;
+  color: $neutral-light;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 100px);
@@ -510,7 +511,6 @@ footer {
     flex-direction: column;
     padding-left: 2em;
     font-size: 1.2em;
-
     .footer-header {
       margin-bottom: 3em;
     }
